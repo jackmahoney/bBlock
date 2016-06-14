@@ -31,6 +31,7 @@ uDom.onLoad(function() {
 
 var onAppDataReady = function(appData) {
     uDom('#aboutNameVer').text(appData.name + ' v' + appData.version);
+    uDom('.appName').text(appData.name);
 };
 
 vAPI.messaging.send('dashboard', { what: 'getAppData' }, onAppDataReady);

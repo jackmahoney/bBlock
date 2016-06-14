@@ -1,4 +1,6 @@
 *.bak
 *.pem
+.idea
+.DS_Store
 /dist/build/
 /tmp/
